@@ -5,6 +5,13 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        data: `@import "${__dirname}/src/styles/styles";`,
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

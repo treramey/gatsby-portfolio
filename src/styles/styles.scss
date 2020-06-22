@@ -1,0 +1,12 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+// Abstracts
+@import "abstracts/variables", "abstracts/mixins";
+
+// Base
+@import "base/base", "base/typography";
+
+//page styling

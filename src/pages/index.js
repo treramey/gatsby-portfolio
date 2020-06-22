@@ -2,20 +2,21 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import AboutHeader from "../components/About/AboutHeader"
+import AboutSubHeader from "../components/About/AboutSubHeader"
+import AboutButton from "../components/About/AboutButton"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <section>
+      <div className="about">
+        <AboutHeader />
+        <AboutSubHeader text="I'm a software developer and designer. Follow my daily design work on Dribbble. You can also find me on Twitter, GitHub, and LinkedIn." />
+        <AboutButton text="View Projects" />
+      </div>
+    </section>
   </Layout>
 )
 
