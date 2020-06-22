@@ -1,50 +1,59 @@
 import React from "react"
+import { FaLinkedin, FaGithub } from "react-icons/fa"
 import "./contact.scss"
 
 const Contact = () => {
   return (
-    <div class="contact">
-      <ul class="contact__list">
-        <li class="contact__item">
+    <div className="contact">
+      <ul className="contact__list">
+        <li>
           <a
             href="https://www.linkedin.com/in/treramey/"
             target="_blank"
-            class="contact__link contact__link-linkedin"
+            className="contact__link contact__link-linkedin"
           >
-            <span class="contact__label">Linkedin</span>
-            <font-awesome-icon icon="['fab', 'linkedin']" />
+            <div className="contact__item">
+              <span className="contact__label">Linkedin</span>
+              <FaLinkedin />
+            </div>
           </a>
         </li>
-        <li class="contact__item">
+        <li>
           <a
             href="https://github.com/treramey"
             target="_blank"
-            class="contact__link contact__link-github"
+            className="contact__link contact__link-github"
           >
-            <span class="contact__label">Github</span>
-            <font-awesome-icon icon="['fab', 'github']" />
+            <div className="contact__item">
+              <span className="contact__label">Github</span>
+              <FaGithub />
+            </div>
           </a>
         </li>
 
-        <li class="contact__item">
+        <li>
           <a
             href="mailto:hello@treramey.dev"
             target="_blank"
-            class="contact__link contact__link-email"
+            className="contact__link contact__link-email"
           >
-            <span class="contact__label">Email</span>
-            <font-awesome-icon icon="['far', 'envelope']" />
+            <div className="contact__item">
+              <span className="contact__label">Email</span>
+              <font-awesome-icon icon="['far', 'envelope']" />
+            </div>
           </a>
         </li>
 
-        <li class="contact__item">
+        <li>
           <a
             href="https://drive.google.com/file/d/1Ve9kGzylOyERVpH5iGphpWuwUfOs9nkf/view?usp=sharing"
             target="_blank"
-            class="contact__link contact__link-resume"
+            className="contact__link contact__link-resume"
           >
-            <span class="contact__label">Resume</span>
-            <font-awesome-icon icon="['far', 'file']" />
+            <div className="contact__item">
+              <span className="contact__label">Resume</span>
+              <font-awesome-icon icon="['far', 'file']" />
+            </div>
           </a>
         </li>
       </ul>

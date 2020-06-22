@@ -1,7 +1,7 @@
 .contact {
   position: absolute;
   top: 50%;
-  left: -7rem;
+  left: -11rem;
   transform: translateY(-50%);
   z-index: $layer-contact;
   visibility: visible;
@@ -13,6 +13,10 @@
   }
   &__list {
     list-style: none;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
   }
   &__link {
     &:visited,
